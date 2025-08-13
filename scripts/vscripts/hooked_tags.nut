@@ -70,9 +70,6 @@ function __TAGS_SpawnInit()
 		}
 	}
 
-	if ( !( "OnSpawn" in hook_table ) )
-		return;
-
 	foreach ( func in hook_table.OnSpawn )
 		func( self );
 }
